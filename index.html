@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси - Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body>
   <header class="main-header">
     <div class="container">
       <div class="index-logo"> 
-        <img src="http://placehold.it/154x64" alt="Glaccy">
+        <img src="img/logo/Logo.svg" alt="Glaccy">
       </div>
       <nav class="main-container">
         <ul>
@@ -69,14 +72,14 @@
     </div>
     <section class="bonus-gift">
       <div class="promo card">
-        <h2>Малинка даром!</h2>
+        <h1>Малинка даром!</h1>
         <p>При покупке 2 кг любого фруктового мороженого, 
           добавим в ваш заказ банку малинового варенья бесплатно.
         </p> 
         <a class="btn" href="#">Хочу варенье!</a> 
       </div>
       <div class="promo card">
-        <h2>Шоколадки даром!</h2>
+        <h1>Шоколадки даром!</h1>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку 
           вкуснейшей шоколадной присыпки абсолютно бесплатно.
         </p> 
@@ -87,28 +90,28 @@
       <article class="item"> 
         <span class="cost">310 Р/кг</span>
         <a href="#"> 
-          <img src="http://placehold.it/200x200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <img src="img/item/item-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           Сливочное с апельсиновым джемом и цитрусовой стружкой
         </a>
       </article>
       <article class="item"> 
         <span class="cost">380 Р/кг</span>
         <a href="#"> 
-          <img src="http://placehold.it/200x200" alt="Сливочно-кофейное с кусочками шоколада">
+          <img src="img/item/item-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           Сливочно-кофейное с кусочками шоколада
         </a>
       </article>
       <article class="item">
         <span class="cost">355 Р/кг</span>
         <a href="#"> 
-          <img src="http://placehold.it/200x200" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <img src="img/item/item-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           Сливочно-клубничное с присыпкой из белого шоколада
         </a>
       </article>
       <article class="item"> 
         <span class="cost">415 Р/кг</span>
         <a href="#"> 
-          <img src="http://placehold.it/200x200" alt="Сливочное крем-брюле с карамельной подливкой">
+          <img src="img/item/item-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           Сливочное крем-брюле с карамельной подливкой
         </a>
       </article>
@@ -136,20 +139,22 @@
       </ul>
     </section>
     <section class="press">
-      <div class="latest-news card">
+      <div class="blog card">
         <h2>
           Новое в нашем блоге
         </h2>
-        <a href="#"><p class="">10 способов сервировки фруктовых щербетов к столу</p></a>
+        <a href="#">
+          <p class="blog-news">10 способов сервировки фруктовых щербетов к столу</p>
+        </a>
       </div>
-        <div class="newsletter card">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-            что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
-          </p>
-          <form action="/echo" method="post">
-            <input type="text" name="email" placeholder="Электронная почта">
-            <button type="submit">Отправить</button>
-          </form>
+      <div class="newsletter card">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+        </p>
+        <form action="/echo" method="post">
+          <input type="text" name="email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </section> 
     <section class="map">
@@ -169,21 +174,16 @@
           <a class="btn btn-vk" href="#">Вконтакте</a> 
         </div>
         <div class="links"> 
-          <img src="http://placehold.it/30x30" alt="Сердце"> 
           <a href="#">Для поставщиков</a> 
           <a href="#">О производстве</a> 
           <a href="#">Наши документы</a> 
           <a href="#">Экологические стандарты</a> 
         </div>
         <div class="developed">
-          <a href="https://htmlacademy.ru">
-            <img src="http://placehold.it/30x30" alt="html academy">
-          </a> 
-          <span>Сделано в 
             <a href="https://htmlacademy.ru"> 
-              <img src="#" alt="HTML Academy">HTML Academy
-            </a> 2016
-          </span> 
+              <img src="img/logo/footer-logo.png" alt="HTML Academy">
+              <span>Сделано в HTML Academy2016</span>
+            </a> 
         </div>
       </div>
     </footer>
