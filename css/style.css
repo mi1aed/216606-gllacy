@@ -6,10 +6,23 @@ body {
   font-weight: normal;
   background-color: #849d8f;
 }
+
+.container {
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+}
+.main-logo {
+  float: left;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: -5px;
+}
+
 h1 {
   font-family: "Roboto";
   line-height: 41px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   font-size: 35px;  
 }
@@ -27,11 +40,40 @@ h2 {
   display: table;
   clear: both;
 }
+.main-navigation {
+  float: left;
+  width: 670px;
+  
+}
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 29px;
+}
+
+.main-navigation .sub-menu {
+  display: none;
+}
+
+.user-block {
+  float: right;
+  width: 267px;
+}
 
 .card {
   float: left;
   width: 560px;
   margin-right: 20px;
+}
+
+.card:last-child {
+  margin-right: 0;
 }
 
 .ice-cream {
@@ -42,9 +84,13 @@ h2 {
   float: left;
   display: inline-block;
   width: 267px;
+  margin-right: 26px;
   
 }
 
+.ice-cream .item:last-child {
+  margin-right: 0;
+}
 .about {
   width: 1146px;
 }
