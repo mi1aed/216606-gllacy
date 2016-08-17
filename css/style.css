@@ -33,6 +33,7 @@ h2 {
   line-height: 30px;
   color: #323232;
   font-weight: normal;
+  font-weight: 500;
 }
 
 .clearfix::after {
@@ -89,6 +90,20 @@ h2 {
   margin-right: 0;
 }
 
+.card a.btn {
+  box-sizing: border-box;
+  float: right;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 30px;
+  background-color: #e84e37;
+  padding: 9px 20px;
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+  text-decoration: none;
+  height: 44px;  
+}
+
 .bonus-left {
   background-image: url(../img/bg/raspberries-bg.jpg);
   color: #ffffff;
@@ -112,6 +127,10 @@ h2 {
   margin-right: 26px;
   
 }
+.item img {
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 .ice-cream .item:last-child {
   margin-right: 0;
@@ -121,6 +140,21 @@ h2 {
   background: url(../img/bg/pattern.jpg);
   border-radius: 15px;
   margin-bottom: 40px;
+  padding: 26px 20px;
+  height: 254px;
+  
+}
+.about ul {
+  padding: 0;
+  margin: 0;
+}
+.about li {
+  width: 540px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  
 }
 
 .press-blog {
@@ -132,23 +166,62 @@ h2 {
  border: 3px solid gray; /*временно*/
  
 }
+
+.press-newsletter .btn {
+  box-sizing: border-box;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 30px;
+  background-color: #e84e37;
+  padding: 0 20px;
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+  margin-top: 15px;
+}
+
+.map {
+  min-height: 430px;
+}
+
+
 .feedback {
   float: right;
-  width: 244px;
-  height: 255px;
+  width: 252px;
+  height: 247px;
   font-size: 14px;
   padding: 29px 25px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 1;
+  position: relative;
+}
+ .feedback .btn {
+  box-sizing: border-box;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 30px;
+  background-color: #e84e37;
+  padding: 0 20px;
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+  margin-top: 15px;
 }
 .feedback b {
   font-size: 18px;
   font-weight: 700;
   
 }
+.main-footer {
+  min-height: 103px;
+}
 
 .main-footer a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
   
 }
 .footer-social {
@@ -160,10 +233,17 @@ h2 {
   float: left;
   width: 560px;
   display: inline-block;
+  
 }
 
 .footer-developed {
   float: right;
   width:  267px;
 }
+.footer-developed a {
+  border-bottom: none;
+}
 
+.footer-developed span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
