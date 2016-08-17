@@ -9,22 +9,24 @@ body {
 
 .container {
   width: 1146px;
-  padding: 0 27px;
+  padding: 0 0px;
   margin: 0 auto;
+  outline: 1px solid yellow;
 }
 .main-logo {
   float: left;
   margin-top: 10px;
-  margin-right: 15px;
+  margin-right: 22px;
   margin-left: -5px;
+  outline: 1px solid yellow;
 }
-
+/*Заголовки*/
 h1 {
   font-family: "Roboto";
   line-height: 41px;
   color: #ffffff;
   font-weight: bold;
-  font-size: 35px;  
+  font-size: 35px;
 }
 
 h2 {
@@ -43,7 +45,8 @@ h2 {
 }
 .main-navigation {
   float: left;
-  width: 670px;
+  width: 410px;
+  outline: 1px solid yellow;
   
 }
 .main-navigation ul {
@@ -64,13 +67,99 @@ h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.main-navigation a.active {
+  background-color: #d07058;
+  
+}
+
 .main-navigation .sub-menu {
   display: none;
 }
+.btn {
+  color: #ffffff;
+  background-color: #a9b9af;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 13px;
+  padding-right: 9px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 
+/*Юзер блок*/
 .user-block {
   float: right;
-  width: 267px;
+  width: 560px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: right;
+  margin-top: 15px; /*исправить, убегает .contacts*/
+  outline: 1px solid yellow;
+}
+
+.user-block .btn {
+  
+}
+
+.user-block .search-dropdown, 
+.user-block .sign-dropdown, 
+.user-block .cart-dropdown {
+  display: none;
+}
+
+.user-block .search {
+  
+}
+
+.user-block .signing {
+  
+}
+
+.user-block .basket {
+  
+}
+
+/*Блок контакты*/
+.contacts {
+  float: right;
+  color: #ffffff;
+  float: right;
+  width: 170px;
+  margin-top: 20px;
+  min-height: 40px;
+  outline: 2px solid yellow;
+  text-align: right;
+}
+
+.contacts .work-time {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.contacts .phone-number {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*Хлебные крошки*/
+.breadcrumbs ul {
+  margin: 0;
+  margin-top: -19px;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
 }
 
 .card {
@@ -84,6 +173,7 @@ h2 {
   padding-right: 20px;
   padding-top: 18px;
   padding-bottom: 18px;
+  outline: 1px solid yellow;
 }
 
 .card:last-child {
@@ -118,6 +208,7 @@ h2 {
 .ice-cream {
   width: 1146px;
   margin-bottom: 40px;
+  outline: 1px solid yellow;
 }
 
 .ice-cream .item {
@@ -125,6 +216,7 @@ h2 {
   display: inline-block;
   width: 267px;
   margin-right: 26px;
+  text-align: center;
   
 }
 .item img {
@@ -136,13 +228,20 @@ h2 {
   margin-right: 0;
 }
 
+
+.ice-cream a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .about {
   background: url(../img/bg/pattern.jpg);
   border-radius: 15px;
   margin-bottom: 40px;
   padding: 26px 20px;
   height: 254px;
-  
+  outline: 1px solid yellow;
 }
 .about ul {
   padding: 0;
@@ -154,7 +253,6 @@ h2 {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  
 }
 
 .press-blog {
@@ -164,7 +262,6 @@ h2 {
 .press-newsletter {
  background: url(../img/bg/substrate.png) no-repeat 50% 50%;
  border: 3px solid gray; /*временно*/
- 
 }
 
 .press-newsletter .btn {
@@ -182,8 +279,8 @@ h2 {
 
 .map {
   min-height: 430px;
+  outline: 1px solid yellow;
 }
-
 
 .feedback {
   float: right;
@@ -219,6 +316,7 @@ h2 {
   width: 1146px;
   font-size: 0;
   margin: 0 auto;
+  outline: 1px solid yellow;
 }
 
 .item-container .item {
@@ -237,41 +335,86 @@ h2 {
   margin-right: 0;
 }
 
-.item-container a > p{
+.item-container a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  
+}
+
+.item-container .item button {
+  display: none;
 }
 
 
 
 
 
-/*Хлебные крошки*/
-.breadcrumbs ul {
-  margin: 0;
-  margin-top: 16px;
+
+/*Фильтры*/
+.filter {
+  width: 879px;
   padding: 0;
-  list-style: none;
+  margin: 0;
+  font-size: 0;
 }
-.breadcrumbs li {
+.filter div {
   display: inline-block;
   vertical-align: top;
+  font-size: 16px;
+  height: 77px;
 }
-.breadcrumbs a {
+
+.filter div:nth-child(1) {
+  width: 193px;
+}
+
+.filter div:nth-child(2) {
+  width: 218px;
+}
+
+.filter div:nth-child(3) {
+  width: 416px;
+}
+
+.filter div:nth-child(4) {
+  width: 620px;
+}
+
+.sorting {
+  padding-left: 13px;
+  padding-right: 9px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #ffffff;
+  background-color: #a9b9af;
+  border-radius: 30px;
+
+}
+.filter h2 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  
+}
+.filter .field {
+  display: inline;
+  width: 430px;
 }
 
-
+.catalog-submit {
+  font-size: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 3px solid #ffffff;
+}
 
 /*footer*/
 .main-footer {
   min-height: 103px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer a {
@@ -279,23 +422,25 @@ h2 {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   
-  
 }
 .footer-social {
   float: left;
   width: 267px;
+  outline: 1px solid yellow;
 }
 
 .footer-links {
   float: left;
   width: 560px;
   display: inline-block;
+  outline: 1px solid yellow;
   
 }
 
 .footer-developed {
   float: right;
-  width:  267px;
+  width:  247px;
+  outline: 1px solid yellow;
 }
 .footer-developed a {
   border-bottom: none;
