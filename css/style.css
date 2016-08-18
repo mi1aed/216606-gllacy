@@ -13,78 +13,53 @@ body {
   margin: 0 auto;
   outline: 1px solid yellow;
 }
-.main-logo {
-  float: left;
-  margin-top: 10px;
-  margin-right: 22px;
-  margin-left: -5px;
-  outline: 1px solid yellow;
-}
-/*Заголовки*/
-h1 {
-  font-family: "Roboto";
-  line-height: 41px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 35px;
-}
-
-h2 {
-  font-family: "Roboto";
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
-  font-weight: normal;
-  font-weight: 500;
-}
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+
+/*Хедер*/
+.main-header {
+  margin-top: 10px;
+  min-height: 102px;  
+}
+.main-logo {
+  float: left;
+  margin-right: 16px;
+  margin-left: -5px;
+  outline: 1px solid yellow;
+}
+/*Навигация*/
 .main-navigation {
   float: left;
   width: 410px;
   outline: 1px solid yellow;
-  
 }
 .main-navigation ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 30px;
 }
 
 .main-navigation li {
   display: inline-block;
   margin-right: 29px;
-  
 }
 .main-navigation a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 13px; 
 }
 
 .main-navigation a.active {
   background-color: #d07058;
-  
 }
 
 .main-navigation .sub-menu {
   display: none;
-}
-.btn {
-  color: #ffffff;
-  background-color: #a9b9af;
-  border-radius: 30px;
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 13px;
-  padding-right: 9px;
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 
 /*Юзер блок*/
@@ -94,7 +69,7 @@ h2 {
   display: inline-block;
   color: #ffffff;
   text-align: right;
-  margin-top: 15px; /*исправить, убегает .contacts*/
+  margin-top: 13px; /*исправить, убегает .contacts*/
   outline: 1px solid yellow;
 }
 
@@ -144,6 +119,9 @@ h2 {
 }
 
 /*Хлебные крошки*/
+.breadcrumbs {
+  width: 200px;
+}
 .breadcrumbs ul {
   margin: 0;
   margin-top: -19px;
@@ -159,13 +137,74 @@ h2 {
   line-height: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
+/*Общий класс для кнопок*/
+.btn {
+  color: #ffffff;
+  background-color: #a9b9af;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 13px;
+  padding-right: 9px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/*Заголовки*/
+h1 {
+  font-family: "Roboto";
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: normal;
+  font-weight: 500;
+}
+
+/*Слайдер*/
+.slider {
+  width: 584px;
+  height: 647px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 1px solid yellow;
+}
+
+.slider .slider-viewport {
+  
+}
+
+.slider .slider-controls {
+  
+}
+.slider a {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+  border-radius: 30px;
+  background-color: #e84e37;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+/*Общий класс для карточек*/
 .card {
   float: left;
   width: 520px;
-  margin-right: 20px;
+  margin-right: 26px;
   min-height: 184px;
   border-radius: 15px;
   margin-bottom: 40px;
@@ -193,11 +232,10 @@ h2 {
   text-decoration: none;
   height: 44px;  
 }
-
+/*Верхние карточки*/
 .bonus-left {
   background-image: url(../img/bg/raspberries-bg.jpg);
   color: #ffffff;
- 
 }
 
 .bonus-right {
@@ -205,6 +243,7 @@ h2 {
   color: #ffffff;
 }
 
+/*Блок мороженое*/
 .ice-cream {
   width: 1146px;
   margin-bottom: 40px;
@@ -228,13 +267,13 @@ h2 {
   margin-right: 0;
 }
 
-
 .ice-cream a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*Блок про магазин*/
 .about {
   background: url(../img/bg/pattern.jpg);
   border-radius: 15px;
@@ -254,15 +293,14 @@ h2 {
   line-height: 22px;
   font-weight: 400;
 }
-
+/*блок пресса*/
 .press-blog {
   background: url(../img/bg/blog-bg.jpg);
 }
 
 .press-newsletter {
  background: url(../img/bg/substrate.png) no-repeat 50% 50%;
- border: 3px solid gray; /*временно*/
-}
+ }
 
 .press-newsletter .btn {
   box-sizing: border-box;
@@ -276,7 +314,7 @@ h2 {
   box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
   margin-top: 15px;
 }
-
+/*блок карта*/
 .map {
   min-height: 430px;
   outline: 1px solid yellow;
@@ -311,46 +349,7 @@ h2 {
   
 }
 
-/*catalog*/
-.item-container {
-  width: 1146px;
-  font-size: 0;
-  margin: 0 auto;
-  outline: 1px solid yellow;
-}
-
-.item-container .item {
-  width: 267px;
-  min-height:  420px; /*потом исправить*/
-  display: inline-block;
-  font-size: 16px;
-  vertical-align: top;
-  font-weight: 500;
-  outline: 2px solid yellow;
-  text-align: center;
-  margin-right: 26px;
-}
-
-.item-container .item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.item-container a {
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.item-container .item button {
-  display: none;
-}
-
-
-
-
-
-
-/*Фильтры*/
+/*Фильтры каталога*/
 .filter {
   width: 879px;
   padding: 0;
@@ -388,15 +387,14 @@ h2 {
   color: #ffffff;
   background-color: #a9b9af;
   border-radius: 30px;
-
 }
+
 .filter h2 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   text-decoration: none;
-  color: #ffffff;
-  
+  color: #ffffff;  
 }
 .filter .field {
   display: inline;
@@ -410,6 +408,40 @@ h2 {
   border: 3px solid #ffffff;
 }
 
+/*Блок каталог продукции*/
+.item-container {
+  width: 1146px;
+  font-size: 0;
+  margin: 0 auto;
+  outline: 1px solid yellow;
+}
+
+.item-container .item {
+  width: 267px;
+  min-height:  420px; /*потом исправить*/
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  font-weight: 500;
+  outline: 2px solid yellow;
+  text-align: center;
+  margin-right: 26px;
+}
+
+.item-container .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.item-container a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item-container .item button {
+  display: none;
+}
+
 /*footer*/
 .main-footer {
   min-height: 103px;
@@ -421,7 +453,6 @@ h2 {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  
 }
 .footer-social {
   float: left;
@@ -434,7 +465,6 @@ h2 {
   width: 560px;
   display: inline-block;
   outline: 1px solid yellow;
-  
 }
 
 .footer-developed {
