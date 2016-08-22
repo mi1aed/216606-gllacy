@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
@@ -23,8 +23,7 @@ body {
 /*Хедер*/
 .main-header {
   position: relative;
-  margin-top: 10px;
-  min-height: 102px;  
+ 
 }
 .main-logo {
   float: left;
@@ -34,25 +33,39 @@ body {
 }
 /*Навигация*/
 .main-navigation {
+  vertical-align: center;
+  position: absolute;
   float: left;
-  width: 410px;
-  outline: 1px solid yellow;
+  width: 610px;
 }
+
 .main-navigation ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 0;
 }
 
 .main-navigation li {
+  vertical-align: top;
   display: inline-block;
-  margin-right: 29px;
+  margin-right: 25px;
+  font-size: 16px;
+  line-height: 18px;
 }
 .main-navigation a {
+  display: block;
+  padding: 7px 13px;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 13px; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.main-navigation a:hover {
+  background: #f7f6f3;
+  color: #333333;
+  padding: 7px 13px;
+  border-radius: 30px;
 }
 
 .main-navigation a.active {
@@ -65,13 +78,15 @@ body {
 
 /*Юзер блок*/
 .user-block {
+  position: absolute;
   float: right;
-  width: 560px;
+  max-width: 560px;
+  top: 25px;
+  right: 0px;
   display: inline-block;
   color: #ffffff;
-  text-align: right;
-  margin-top: 13px; /*исправить, убегает .contacts*/
   outline: 1px solid yellow;
+  vertical-align: top;
 }
 
 .user-block .btn {
@@ -79,21 +94,67 @@ body {
 }
 
 .user-block .search-dropdown, 
-.user-block .sign-dropdown, 
+.user-block .login-dropdown, 
 .user-block .cart-dropdown {
   display: none;
 }
 
+.user-block a {
+  display: inline-block;
+  vertical-align: top;
+  height: 21px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
 .user-block .search {
-  
+  position: relative;
+  font-size: 0;
 }
 
-.user-block .signing {
-  
+.user-block .search::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  top: 5px;
+  right: 2px;
+  background-image: url("/img/icons/search-icon.svg");
 }
+
+.user-block .login {
+  position: relative;
+  padding-left: 35px;
+}
+
+.user-block .login::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  top: 7px;
+  right: 48px;
+  background-image: url("/img/icons/login-icon.svg");
+}
+  
 
 .user-block .basket {
-  
+  position: relative;
+  padding-left: 43px;
+  padding-right: 35px;
+}
+.user-block .basket::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  top: 7px;
+  right: 83px;
+  background-image: url("/img/icons/cart-icon.svg");
 }
 
 /*Блок контакты*/
