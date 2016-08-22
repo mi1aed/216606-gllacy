@@ -53,9 +53,10 @@ body {
   line-height: 18px;
 }
 .main-navigation a {
-  display: block;
   padding: 7px 13px;
+  display: block;
   color: #ffffff;
+  margin: 7px 13px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
@@ -78,10 +79,8 @@ body {
 /*Юзер блок*/
 .user-block {
   float: right;
-  margin-top: 13px;
+  margin-top: 13.5px;
   max-width: 560px;
-  top: 25px;
-  right: 0px;
   display: inline-block;
   color: #ffffff;
   outline: 1px solid yellow;
@@ -101,14 +100,16 @@ body {
 .user-block a {
   display: inline-block;
   vertical-align: top;
-  height: 21px;
-  font-size: 16px;
-  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   text-decoration: none;
 }
 .user-block .search {
   position: relative;
+  width: 12px;
   font-size: 0;
 }
 
@@ -118,14 +119,15 @@ body {
   display: inline-block;
   width: 17px;
   height: 17px;
-  top: 5px;
-  right: 2px;
+  top: 9px;
+  right: 7px;
   background-image: url("/img/icons/search-icon.svg");
 }
 
 .user-block .login {
   position: relative;
-  padding-left: 35px;
+  padding-left: 45px;
+  padding-right: 18px;
 }
 
 .user-block .login::before {
@@ -135,14 +137,14 @@ body {
   width: 21px;
   height: 20px;
   top: 7px;
-  right: 48px;
+  right: 58px;
   background-image: url("/img/icons/login-icon.svg");
 }
   
 
 .user-block .basket {
   position: relative;
-  padding-left: 43px;
+  padding-left: 45px;
   padding-right: 35px;
 }
 .user-block .basket::before {
