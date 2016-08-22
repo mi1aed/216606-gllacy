@@ -22,7 +22,6 @@ body {
 
 /*Хедер*/
 .main-header {
-  position: relative;
  
 }
 .main-logo {
@@ -33,9 +32,9 @@ body {
 }
 /*Навигация*/
 .main-navigation {
-  vertical-align: center;
-  position: absolute;
+  margin-top: 13px;
   float: left;
+  vertical-align: center;
   width: 610px;
 }
 
@@ -78,8 +77,8 @@ body {
 
 /*Юзер блок*/
 .user-block {
-  position: absolute;
   float: right;
+  margin-top: 13px;
   max-width: 560px;
   top: 25px;
   right: 0px;
