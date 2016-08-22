@@ -22,6 +22,7 @@ body {
 
 /*Хедер*/
 .main-header {
+  position: relative;
   margin-top: 10px;
   min-height: 102px;  
 }
@@ -97,12 +98,11 @@ body {
 
 /*Блок контакты*/
 .contacts {
-  float: right;
+  position: absolute;
   color: #ffffff;
-  float: right;
   width: 170px;
-  margin-top: 20px;
-  min-height: 40px;
+  top: 72px;
+  right: 129px;
   outline: 2px solid yellow;
   text-align: right;
 }
@@ -281,6 +281,9 @@ h2 {
   padding: 26px 20px;
   height: 254px;
   outline: 1px solid yellow;
+}
+.about h2 {
+  margin: 0;
 }
 .about ul {
   padding: 0;
@@ -461,10 +464,16 @@ h2 {
 }
 
 .footer-links {
-  float: left;
   width: 560px;
   display: inline-block;
   outline: 1px solid yellow;
+}
+.footer-links .business {
+  float: left;
+}
+
+.footer-links .business {
+  float: right;
 }
 
 .footer-developed {
